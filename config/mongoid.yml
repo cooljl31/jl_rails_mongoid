@@ -159,6 +159,8 @@ production:
        # in most operating environments.
        connect_timeout: 15
 production:
-  sessions:
+  clients:
     default:
       uri: <%= ENV['MONGODB_URI'] %>
+      option:
+        connect_timeout: 15
