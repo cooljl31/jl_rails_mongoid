@@ -1,15 +1,20 @@
-= form_for @post do |f|
+= form_for :post, url: posts_path do |f|
   - if @post.errors.any?
-    #error_explanation
-      h2 = "#{pluralize(@post.errors.count, "error")} prohibited this post from being saved:"
-      ul
-        - @post.errors.full_messages.each do |message|
-          li = message
-
-  .field
-    = f.label :title
+      #errors
+        h2
+          = pluralize(@post.errors.count, 'error')
+          |  stoped this post from saving
+        ul
+          - @post.errors.full_messages.each do |msg|
+            li
+              = msg
+  p
+    = f.label :title, class: 'title'
+    br
     = f.text_field :title
-  .field
-    = f.label :body
+  p
+    = f.label :body, class: 'body'
+    br
     = f.text_area :body
-  .actions = f.submit
+  p
+    = f.submit
