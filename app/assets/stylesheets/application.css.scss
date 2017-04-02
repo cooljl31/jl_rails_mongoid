@@ -15,7 +15,6 @@
  */
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-@import 'normalize';
 
 html, body {
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -92,11 +91,11 @@ a {
 }
 
 .clearfix:after {
-   content: ".";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 #main_content {

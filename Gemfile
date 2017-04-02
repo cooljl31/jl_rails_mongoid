@@ -57,7 +57,7 @@ gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'slim-rails'
 gem 'bootstrap-sass'
-
+gem 'rollbar'
 group :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
