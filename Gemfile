@@ -52,7 +52,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rails_12factor', group: :production
 gem 'simple_form'
-gem 'mongoid'
+gem 'mongoid', '>= 7.6.1'
 gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'slim-rails'
@@ -61,7 +61,7 @@ gem 'rollbar'
 group :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
-  gem 'mongoid-rspec'
+  gem 'mongoid-rspec', '>= 4.0.0'
   gem 'cucumber-rails'
   gem 'capybara'
   gem 'database_cleaner'
